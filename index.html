@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 150px;
+      margin-bottom: 100px;
+    }
+
+    #intro {
+      margin-left: 100px;
+    }
+
+    #intro h2 {
+      margin-bottom: -30px;
+      color: #fff;
+      font-size: 40px;
+    }
+
+    #intro h3 {
+      color: #fff;
+      font-size: 30px;
+    }
+
+    #intro h3 b {
+      font-weight: 790;
+      font-size: 45px;
+      color: red;
+    }
+
+    #intro p {
+      margin-bottom: -10px;
+      width: 650px;
+    }
+
+    main form input {
+      width: 250px;
+      padding: 2px 10px;
+      border: #fff 1px solid;
+      border-radius: 6px;
+    }
+
+    main button {
+      font-size: 18px;
+      background-color: transparent;
+      border: none;
+      padding: 15px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    main button:hover {
+      content: 'get started....';
+      color: red;
+    }
+
+    #unregistered a:hover {
+      color: red;
+    }
+
+    #unregistered {
+      padding: 15px;
+    }
+
+    #unregistered a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #image {
+      margin: 10px;
+    }
+
+    #image img {
+      margin-top: -70px;
+      margin-right: 10px;
+      width: 600px;
+      padding: 10px;
+    }
+    /* responsive */
+    @media (max-width: 768px) {
+      main {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+      }
+
+      #intro {
+        
+        z-index: 99;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 100%;
+      }
+
+      #intro h2 {
+        font-size: 20px;
+      }
+
+      #intro h3 {
+        margin-top: 30px;
+        font-size: 18px;
+      }
+
+      #intro h3 b {
+        font-size: 30px;
+      }
+
+      #intro p {
+        margin-top: 5px;
+        width: 380px;
+        font-size: 11px;
+      }
+
+      main form input {
+        width: 140px;
+        padding: 1px 5px;
+        font-size: 10px;
+      }
+
+      main button {
+        font-size: 13px;
+        padding: 5px;
+      }
+      #image{
+        z-index: 9;
+        margin-right: 1px;
+      }
+
+      #image img {
+        z-index: 9;
+        width: 280px;
+        margin-top: 180px;
+        margin-left: -260px;
+      }
+
+      #unregistered{
+        padding: 2px;
+        font-size: 11px;
+        left: 0;
+      }
+
+      /* Adjust spacing to make it compact */
+      #intro p, #unregistered {
+        margin-bottom: 0px;
+      }
+    }
+    </style>
+  </head>
+
+  <body style="background-color: #333;">
+    <!--top section-->
+    <header>
+      <div id="logo">
+        <p>
+          curate<b>BLOG &nbsp;</b>
+        </p>
+      </div>
+      <!-- Hidden checkbox for toggling the menu -->
+      <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" id="menu-icon">☰</label>
+    <!--nav menu-->
+    <nav>
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="">categories</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="#" class="register-link">register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--landing page section-->
+  <main>
+    <div id="intro">
+      <h2>unleash your thoughts,</h2>
+      <h3>curate your <b>BLOG</b></h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, perferendis! Asperiores laudantium sed
+        soluta? Atque maxime praesentium sed labore repudiandae ad expedita vitae, rem, laboriosam consectetur
+        voluptatum cum repellat deleniti.
+      </p>
+      <br>
+      <form method="POST" action="password.php">
+        <input type="email" name="email" placeholder="enter your registered email" id="">
+        <button> get started </button>
+      </form>
+
+      <p id="unregistered">
+        new here, <a href="#" class="register-link">sign up</a>
+      </p>
+    </div>
+
+    <div id="image">
+      <img src="blog-website2.png" alt="img">
+    </div>
+  </main>
+  <br>
+
+  <!--footer section-->
+  <footer>
+    <hr>
+    <h3>curate<b>BLOG &nbsp;</b></h3>
+    <div id="concise">
+      <div id="contact">
+        <p>
+          <B>contact us</B> <br>
+          email: contact@curateblog.com <br>
+          phone: +91 0123456789 <br>
+          address: 321 blog street , asguard city <br> pin-9101010
+        </p>
+      </div>
+      <div id="follow">
+        <p>
+          &nbsp; ALSO, FOLLOW US ON : <br>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </p>
+      </div>
+    </div>
+    <br/>
+    <div id="cpy">
+      <p>
+        &copy; 2024, curateBLOG, all right reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- Sign Up Banner -->
+  <div id="popup">
+    <div class="banner">
+      <div class="formbox">
+        <h2>sign up</h2>
+        <hr>
+        <form action="landing.php" method="get">
+          <div class="inputbox">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" name="name" placeholder="  your name ">
+          </div>
+          <div class="inputbox">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <input type="number" name="number" placeholder=" +91 00000 00000 ">
+          </div>
+          <div class="inputbox">
+            <span class="icon"><ion-icon name="mail-open-outline"></ion-icon></span>
+            <input type="email" name="email" placeholder="  your@email.com ">
+          </div>
+          <div class="inputbox">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" name="password" placeholder="  ***password*** ">
+          </div>
+          <div class="inputbox">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" name="re-password" placeholder="***re-type password*** ">
+          </div>
+          <br>
+          <button type="submit" class="submit" name="submit">register</button>
+          <p>
+            already have an account, <a href="landing.php">sign in</a>
+          </p>
+          <p>
+            -> click anywhere <- <br> to close this signup screen
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--script -->
+    <script src="popup.js"></script>
+    <script>
+    </script>
+
+    <!--for icons source-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
